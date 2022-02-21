@@ -1,5 +1,5 @@
-const mainImgContainer = document.querySelector('.sub-carousel__div--image-wrap');
-const subImgContainer = document.querySelectorAll('.sub-carousel__div--image-wrap');
+const mainImgContainer = document.querySelector('.carousel__section--main');
+const subImgContainer = document.querySelector('.carousel-wrap__section--sub');
 const nextBtn = document.querySelector('.btn--right');
 const prevBtn = document.querySelector('.btn--left');
 console.log(nextBtn)
@@ -33,21 +33,28 @@ function createClassesEl() {
   const orderChangedClassessArr = orderNoArr.map((orderNo) => {
     return classesArr[orderNo]
   })
-  createSubClass(orderChangedClassessArr)
+  const mainClassHtml = createMainClass(orderChangedClassessArr[0]);
+  mainImgContainer.innerHTML = mainClassHtml;
+  // mainImgContainer.innerHTML('')
+  // console.log(mainImgContainer)
+
+  const subClassHtml = createSubClass(orderChangedClassessArr.slice(1,3));
+  subImgContainer.innerHTML = subClassHtml;
+  // subImgContainer.innerHTML = ''
+  console.log(subClassHtml)
 }
 
 function createMainClass(data) {
   return `
-  <div class="carousel__section--main">
     <img src=${data.img} alt="main-class-img" class="main-carousel__img">
     <p class="main-carousel__text--description">
     ${data.description}<a href=${data.link}></a>
   </p>
-  </div>
   `
 }
 
 function createSubClass(arr) {
+  console.log(arr)
   const html = arr.map((data) => {
     return `
     <section class="carousel__section--sub">
@@ -64,7 +71,6 @@ function createSubClass(arr) {
           </section>
     `
   }).join('');
-  console.log(html)
   return html;
 }
 
