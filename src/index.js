@@ -54,11 +54,15 @@ function createMainClass(data) {
     <div class="main-carousel__div--img-wrap">
       <img src=${data.img} alt="main-class-img" class="main-carousel__img">
     </div>
-    <p class="main-carousel__text--description">
-    ${data.description}<a href=${data.link}></a>
-  </p>
+    <div class="main-carousel__text--description">
+    <p>${data.description1}</p>
+    <p>${data.description2}
+    <a href=${data.link}></a>
+    </p>
+  </div>
   `
 }
+              // <img src=${data.img} alt="" class="sub-carousel__img">
 
 function createSubClass(arr) {
   console.log(arr)
@@ -66,7 +70,7 @@ function createSubClass(arr) {
     return `
     <section class="carousel__section--sub">
             <span class="sub-carousel__div--image-wrap">
-              <img src=${data.img} alt="" class="sub-carousel__img">
+              <div class="sub-carousel__img" style="background-image: url(${data.img})"></div>
             </span>
             <div class="sub-carousel__div">
               <p class="sub-carousel__text--title">${data.name}</p>
