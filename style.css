@@ -22,15 +22,6 @@ body {
   justify-content: center;
 }
 
-.class {
-  min-width: 300px;
-  max-width: 700px;
-  min-height: 150px;
-  max-height: 400px;
-  /* min-height: 150px; */
-  /* height: 400px; */
-}
-
 .class__header {
   display: flex;
   justify-content: space-between;
@@ -61,19 +52,22 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: purple; */
+  width: 1000px;
+  height: 300px;
 }
 
 .carousel__section--main {
   position: relative;
   display: flex;
   width: 50%;
+  height: 100%;
   padding: 10px;
 }
 
 .main-carousel__div--img-wrap {
-  min-height: 150px;
-  max-height: 200px;
+  /* min-height: 150px; */
+  /* max-height: 200px; */
+  height: 100%;
   background-color: lightgray;
   overflow: hidden;
   object-fit: cover;
@@ -117,15 +111,15 @@ body {
 
 .carousel__section--sub:nth-child(1) {
   margin-bottom: 15px;
-  padding-bottom: 15px;
+  padding: 10px 0 10px 0;
   border-bottom: 1px solid lightgray;
 }
 
 .sub-carousel__div--image-wrap {
   display: flex;
   align-items: center;
-  height: 86px;
-  width: 120px;
+  height: 125px;
+  width: 30%;
   overflow: hidden;
   background-color: yellow;
 }
