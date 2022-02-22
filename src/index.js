@@ -65,6 +65,13 @@ function createMainClass(data) {
               // <img src=${data.img} alt="" class="sub-carousel__img">
 
 function createSubClass(arr) {
+  const tagsColor = {
+    '광운점': '#a27fde',//purple
+    '부산동래점': '#00afe3',//blue
+    '송파점': '#46cfa7',//green
+    '구로점': '#ffcd32',//yellow
+    '광화문점': '#ffa04d'//orange
+  }
   console.log(arr)
   const html = arr.map((data) => {
     return `
@@ -77,7 +84,7 @@ function createSubClass(arr) {
               <p class="sub-carousel__text--price">${data.price}원</p>
               <div class="sub-carousel__div--tags">
                 ${data.tags.map((tag) => {
-                  return `<button class="sub-carousel__button--tag">${tag}</button>`
+                  return `<button class="sub-carousel__button--tag" style="color:${tagsColor[tag]}; border: 1px solid ${tagsColor[tag]}">${tag}</button>`
                 }).join('')}
               </div>
             </div>
