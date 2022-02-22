@@ -1,12 +1,11 @@
-main{
-    position: absolute;
-    top: 52px;
-    width:100%;
+main {
+  position: absolute;
+  top: 94px;
+  width: 100%;
 }
 
-
 @media (min-width: 1024px) {
-    main {
-        top: 90px;
-    }
+  main {
+    top: 90px;
+  }
 }

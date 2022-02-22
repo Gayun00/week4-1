@@ -1,197 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="styles/reset.css">
-  <link rel="stylesheet" href="styles/styles.css">
-  <link rel="stylesheet" href="styles/class.css">
-  <link rel="stylesheet" href="styles/header.css">
-  <link rel="stylesheet" href="styles/banner.css">
-  <link rel="stylesheet" href="styles/iframe.css">
-  <link rel="stylesheet" href="styles/footer.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-</head>
-<body>
-  <header>
-    <div class="header-inner">
-      <div class="logo">
-        <a class="logo__a" href="/">
-          <span class="logo__span">logo</span>
-        </a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/class.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/banner.css" />
+    <link rel="stylesheet" href="styles/iframe.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header-inner">
+        <div class="header-logo">
+          <a class="header-logo__a" href="/">
+            <span class="header-logo__span">logo</span>
+          </a>
+        </div>
+        <nav class="nav-pc">
+          <ul class="nav__ul">
+            <li class="nav__list">
+              <a class="nav__a">
+                <span class="nav__span hrefMedia">동영상</span>
+              </a>
+            </li>
+            <li class="nav__list">
+              <a class="nav__a">
+                <span class="nav__span hrefclass">플라워클래스</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="my-page">
+          <a class="my-page__a--profile">
+            <span class="my-page__span">마이페이지</span>
+          </a>
+          <a class="my-page__a--cart">
+            <span class="my-page__span">장바구니</span>
+          </a>
+        </div>
       </div>
-      <nav class="nav-pc">
+      <nav class="nav-mobile">
         <ul class="nav__ul">
           <li class="nav__list">
             <a class="nav__a">
-              <span class="nav__span">동영상</span>
+              <span class="nav__span hrefMedia">동영상</span>
             </a>
           </li>
           <li class="nav__list">
             <a class="nav__a">
-              <span class="nav__span">플라워클래스</span>
+              <span class="nav__span hrefclass">플라워클래스</span>
             </a>
           </li>
         </ul>
       </nav>
-      <div class="my-page">
-        <a class="my-page__a--profile">
-          <span class="my-page__span">마이페이지</span>
-        </a>
-        <a class="my-page__a--cart">
-          <span class="my-page__span">장바구니</span>
-        </a>
+    </header>
+    <main>
+      <div class="media" id="media">
+        <iframe
+          class="media__iframe"
+          src="https://www.youtube.com/embed/F8WZLIO5zNA"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
       </div>
-    </div>
-    <nav class="nav-mobile">
-      <ul class="nav__ul">
-        <li class="nav__list">
-          <a class="nav__a" href="#media">
-            <span class="nav__span">동영상</span>
-          </a>
-        </li>
-        <li class="nav__list">
-          <a class="nav__a" href="#flower-class">
-            <span class="nav__span">플라워클래스</span>
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-  <div class="media" id="media">
-    <iframe
-      class="media__iframe"
-      src="https://www.youtube.com/embed/F8WZLIO5zNA"
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen
-    ></iframe>
-  </div>
-  <div class="class">
-    <div class="class__header">
-      <div class="header">
-        <h2 class="header__title">꽃과 함께 하는 일상,</h2>
-        <h2 class="header__title">플라워 클래스</h2>
-      </div>
-      <button class="header__button--more">더보기</button>
-    </div>
-    <div class="class__carousel">
-      <div class="carousel__section--main">
-      </div>
-      <div class="carousel-wrap__section--sub">
-      </div>
-      <div class="carousel-btns__div">
-        <button class="btn--prev">
-          <img class="btn__img prev" src="./img/next.png" alt="">
-        </button>
-        <button class="btn--next">
-          <img class="btn__img" src="./img/next.png" alt="">
-        </button>
-      </div>
-    </div>
-  </div>
-  <div class="banner__container">
-    <div class="banner__leftBox">
-      <div class="banner__leftBox-content">
-        <div class="banner__leftBox-title">
-          <span>꾸까 브랜드 이야기</span>
+      <div class="class">
+        <div class="class__header">
+          <div class="header">
+            <h2 class="header__title">꽃과 함께 하는 일상,</h2>
+            <h2 class="header__title">플라워 클래스</h2>
+          </div>
+          <button class="header__button--more">더보기</button>
         </div>
-        <div class="banner__leftBox-description">
-          <div>꽃으로 라이프스타일을 만들어가는</div>
-          <div>kukka의 문화를 소개해요.</div>
-        </div>
-        <div class="banner__leftBox-btnBox">
-          <button class="banner__leftBox-btn">Brand story</button>
+        <div class="class__carousel">
+          <div class="carousel__section--main"></div>
+          <div class="carousel-wrap__section--sub"></div>
+          <div class="carousel-btns__div">
+            <button class="btn--prev">
+              <img class="btn__img prev" src="./img/next.png" alt="" />
+            </button>
+            <button class="btn--next">
+              <img class="btn__img" src="./img/next.png" alt="" />
+            </button>
+          </div>
         </div>
       </div>
-      <div class="banner__leftBox-gradientBox"></div>
-      <img class="banner__img" src="img/leftBox.jpg" alt="leftPicture" />
-    </div>
-    <div class="banner__rightBox">
-      <div class="banner__rightBox-content">
-        <div class="banner__rightBox-title">
-          <span>꾸까 오프라인 쇼룸</span>
+      <div class="banner__container">
+        <div class="banner__leftBox">
+          <div class="banner__leftBox-content">
+            <div class="banner__leftBox-title">
+              <span>꾸까 브랜드 이야기</span>
+            </div>
+            <div class="banner__leftBox-description">
+              <div>꽃으로 라이프스타일을 만들어가는</div>
+              <div>kukka의 문화를 소개해요.</div>
+            </div>
+            <div class="banner__leftBox-btnBox">
+              <button class="banner__leftBox-btn">Brand story</button>
+            </div>
+          </div>
+          <div class="banner__leftBox-gradientBox"></div>
+          <img class="banner__img" src="img/leftBox.jpg" alt="leftPicture" />
         </div>
-        <div class="banner__rightBox-description">
-          <div>꽃을 가까이서 만져보고 향기도 맡아보고,</div>
-          <div>꽃 속에서 작은 휴식을 누릴 수 있는 kukka의 오프라인 쇼룸</div>
-        </div>
-        <div class="banner__rightBox-btnBox">
-          <button class="banner__rightBox-btn">Brand story</button>
+        <div class="banner__rightBox">
+          <div class="banner__rightBox-content">
+            <div class="banner__rightBox-title">
+              <span>꾸까 오프라인 쇼룸</span>
+            </div>
+            <div class="banner__rightBox-description">
+              <div>꽃을 가까이서 만져보고 향기도 맡아보고,</div>
+              <div>
+                꽃 속에서 작은 휴식을 누릴 수 있는 kukka의 오프라인 쇼룸
+              </div>
+            </div>
+            <div class="banner__rightBox-btnBox">
+              <button class="banner__rightBox-btn">Brand story</button>
+            </div>
+          </div>
+          <div class="banner__rightBox-gradientBox"></div>
+          <img class="banner__img" src="img/rightBox.jpg" alt="rightPicture" />
         </div>
       </div>
-      <div class="banner__rightBox-gradientBox"></div>
-      <img class="banner__img" src="img/rightBox.jpg" alt="rightPicture" />
-    </div>
-  </div>
-  <div class="footer_wrap">
-    <div class="footer_inner">
-      <nav class="sect_sns">
-        <a
-          href="https://ko-kr.facebook.com/kukka.kr/"
-          target="_blank"
-          class="sns f start"
-          ><span class="blind">Facebook</span></a
-        >
-        <a
-          href="https://www.instagram.com/kukkakorea/"
-          target="_blank"
-          class="sns i"
-          ><span class="blind">Instagram</span></a
-        >
-        <a
-          href="https://www.youtube.com/channel/UC_zQakXCUPvjcfsU067zyCQ?view_as=subscriber"
-          target="_blank"
-          class="sns y"
-          ><span class="blind">Youtube</span></a
-        >
-      </nav>
-      <br/>
+      <div class="footer_wrap">
+        <div class="footer_inner">
+          <nav class="sect_sns">
+            <a
+              href="https://ko-kr.facebook.com/kukka.kr/"
+              target="_blank"
+              class="sns f start"
+              ><span class="blind">Facebook</span></a
+            >
+            <a
+              href="https://www.instagram.com/kukkakorea/"
+              target="_blank"
+              class="sns i"
+              ><span class="blind">Instagram</span></a
+            >
+            <a
+              href="https://www.youtube.com/channel/UC_zQakXCUPvjcfsU067zyCQ?view_as=subscriber"
+              target="_blank"
+              class="sns y"
+              ><span class="blind">Youtube</span></a
+            >
+          </nav>
+          <br />
 
-      <dl class="contact">
-        <dt>꾸까 고객센터</dt>
-        <dd class="f"><span class="blind">유선전화번호 : </span>1661-1031</dd>
-        <dd class="s">
-          <span class="blind">운영시간 안내 : </span>(평일 10:00 - 13:00,
-          14:00 - 18:00 / 주말 &amp; 공휴일 제외)
-        </dd>
-        <dd class="s add_partner_tel">기업제휴 문의 : 070-4238-8251</dd>
-      </dl>
+          <dl class="contact">
+            <dt>꾸까 고객센터</dt>
+            <dd class="f">
+              <span class="blind">유선전화번호 : </span>1661-1031
+            </dd>
+            <dd class="s">
+              <span class="blind">운영시간 안내 : </span>(평일 10:00 - 13:00,
+              14:00 - 18:00 / 주말 &amp; 공휴일 제외)
+            </dd>
+            <dd class="s add_partner_tel">기업제휴 문의 : 070-4238-8251</dd>
+          </dl>
 
-      <nav class="faq">
-        <a href="/faq/" class="link">꾸까 고객센터 &gt;</a>
-      </nav>
+          <nav class="faq">
+            <a href="/faq/" class="link">꾸까 고객센터 &gt;</a>
+          </nav>
 
-      <dl class="about">
-        <dt class="logo"><span class="blind">꾸까</span></dt>
-        <dd>상호명: 꾸까(kukka)</dd>
-        <dd>사업자 등록번호: 264-81-32594</dd>
-        <dd class="end">대표자: 박춘화</dd>
-        <br class="only_pc" />
-        <dd>
-          <address>소재지: 서울시 서초구 남부순환로333길 10 kukka</address>
-        </dd>
-        <dd><a href="/disclosure/?next=/">기업공시</a></dd>
-        <dd class="end">통신판매신고번호 2018-서울서초-1692</dd>
-        <br class="only_pc" />
-        <dd class="end"><copy>© 2014-2021 kukka, Inc. All rights reserved.</copy></dd>
-      </dl>
+          <dl class="about">
+            <dt class="logo"><span class="blind">꾸까</span></dt>
+            <dd>상호명: 꾸까(kukka)</dd>
+            <dd>사업자 등록번호: 264-81-32594</dd>
+            <dd class="end">대표자: 박춘화</dd>
+            <br class="only_pc" />
+            <dd>
+              <address>소재지: 서울시 서초구 남부순환로333길 10 kukka</address>
+            </dd>
+            <dd><a href="/disclosure/?next=/">기업공시</a></dd>
+            <dd class="end">통신판매신고번호 2018-서울서초-1692</dd>
+            <br class="only_pc" />
+            <dd class="end">
+              <copy>© 2014-2021 kukka, Inc. All rights reserved.</copy>
+            </dd>
+          </dl>
 
-      <nav class="items">
-        <a href="/agreement/?next=/" class="link first">이용약관</a>
-        <a href="/privacy/?next=/" class="link">개인정보 처리방침</a>
-        <a href="https://partners.kukka.kr/" target="_blank" class="link"
-          >제휴안내</a>
-      </nav>
-    </div>
-  </div>
-</main>
-  <script src="index.js"></script>
-</body>
+          <nav class="items">
+            <a href="/agreement/?next=/" class="link first">이용약관</a>
+            <a href="/privacy/?next=/" class="link">개인정보 처리방침</a>
+            <a href="https://partners.kukka.kr/" target="_blank" class="link"
+              >제휴안내</a
+            >
+          </nav>
+        </div>
+      </div>
+    </main>
+    <script src="index.js"></script>
+    <script src="onMove.js"></script>
+  </body>
 </html>
