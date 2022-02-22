@@ -16,12 +16,6 @@ async function fetchClass() {
   createClassesEl();
 }
 
-// function fetchClass() {
-//   fetch('./data.json')
-//     .then(res => res.json())
-//     .then(res => classesArr = res);
-//     console.log(classesArr)
-// }
 fetchClass()
 
 function changeOrderNext() {
@@ -63,7 +57,6 @@ function createMainClass(data) {
   </div>
   `
 }
-              // <img src=${data.img} alt="" class="sub-carousel__img">
 
 function createSubClass(arr) {
   const tagsColor = {
