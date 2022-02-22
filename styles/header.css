@@ -1,0 +1,213 @@
+header {
+    width: 100%;
+    height: 52px;
+    position: fixed;
+    background-color: white;
+    /* 수직 수평 정렬 */
+    text-align: center;
+    z-index: 100;
+  }
+  
+  nav {
+    background-color: white;
+  }
+  
+  .header-inner {
+    position: relative;
+    width: 1024px;
+    height: 52px;
+    margin: 0 auto;
+  }
+  
+  .logo {
+    display: inline-block;
+    /* 왼쪽 고정*/
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .logo__a {
+    display: inline-block;
+    background-image: url('https://kukka-2-media-123.s3.amazonaws.com/static/kukkart_new/img/sprite/kukka.png');
+    background-size: 626px 422.5px;
+    width: 167px;
+    height: 22px;
+    background-position: -383px -219px;
+    margin-top: 15px;
+    margin-left: 20px;
+  }
+  
+  .logo__span {
+    display: none;
+  }
+  
+  .nav-pc {
+    display: none;
+  }
+  
+  .nav__ul {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    height: 44px;
+    vertical-align: middle;
+    border-top: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+  }
+  
+  .nav__list {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  
+  .nav__a {
+    position: relative;
+  }
+  
+  .nav__span {
+    font-size: 18px;
+    color: #787878;
+  }
+  
+  .my-page {
+    /* 오른쪽 고정 */
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    height: 90px;
+  }
+  
+  .my-page__a {
+    position: relative;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .my-page__a--profile::before {
+    content: '';
+    display: none;
+  }
+  
+  .my-page__a--cart::before {
+    content: '';
+    display: inline-block;
+    margin: 13px 13px 0 10px;
+    background-image: url('https://kukka-2-media-123.s3.amazonaws.com/static/kukkart_new/img/sprite/kukka.png');
+    background-size: 626px 422.5px;
+    width: 21px;
+    height: 23.5px;
+    background-position: -604px -306px;
+  }
+  
+  .my-page__span {
+    position: absolute;
+    overflow: hidden;
+    margin: -1px;
+    width: 1px;
+    height: 1px;
+  }
+  /* PC (해상도 1024px)*/
+  @media (min-width: 1024px) {
+    header {
+      height: 90px;
+      border-bottom: 1px solid #ffcd32;
+    }
+    .header-inner {
+      height: 90px;
+    }
+    .nav-mobile {
+      display: none;
+    }
+    .nav-pc {
+      display: block;
+    }
+    .nav__ul {
+      display: table;
+      table-layout: fixed;
+      width: 100%;
+      border: none;
+      height: 90px;
+    }
+    .nav__span {
+      color: black;
+    }
+    .nav__span:hover::after {
+      opacity: 1;
+    }
+    .nav__span::after {
+      content: '';
+      opacity: 0;
+      display: block;
+      position: absolute;
+      bottom: -14px;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: #ffcd32;
+      margin-top: 6px;
+    }
+    .logo {
+      margin-top: 20px;
+    }
+    .logo__a {
+      display: inline-block;
+      background-image: url('https://kukka-2-media-123.s3.amazonaws.com/static/kukkart_new/img/sprite/kukka.png');
+      background-position: -160px -612px;
+      width: 128px;
+      height: 52px;
+      background-size: 1252px 845px;
+      margin-top: 0;
+      margin-left: 0;
+    }
+    .my-page {
+      margin-top: 25px;
+    }
+    .my-page__a--profile::before {
+      content: '';
+      display: inline-block;
+      margin: 5px 0 0 7px;
+      background-image: url('https://kukka-2-media-123.s3.amazonaws.com/static/kukkart_new/img/sprite/kukka.png');
+      background-position: -38px -817px;
+      width: 25px;
+      height: 28px;
+      background-size: 1252px 845px;
+    }
+    .my-page__a--cart::before {
+      content: '';
+      display: inline-block;
+      margin: 5px 0 0 7px;
+      background-image: url('https://kukka-2-media-123.s3.amazonaws.com/static/kukkart_new/img/sprite/kukka.png');
+      background-position: -73px -817px;
+      width: 25px;
+      height: 28px;
+      background-size: 1252px 845px;
+    }
+  }
+  
+  /* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .header-inner {
+      width: 100%;
+    }
+    /*스타일입력*/
+  }
+  
+  /* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/
+  @media (max-width: 767px) {
+    /*스타일입력*/
+    .header-inner {
+      width: 100%;
+    }
+  }
+  
+  .exam {
+    position: absolute;
+    
+    width: 100%;
+    top: 90px;
+    height: 12000px;
+    background-color: aquamarine;
+  }
+  
