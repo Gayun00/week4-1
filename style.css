@@ -18,21 +18,30 @@ button {
 }
 
 body {
-  display: flex;
-  justify-content: center;
+  margin-left: 100px;
+}
+
+.class {
+  width: 1000px;
+
 }
 
 .class__header {
-  display: flex;
-  justify-content: space-between;
+  position: relative;
+
+  /* display: block; */
+  /* display: flex;
+  justify-content: space-between; */
   padding: 10px;
 }
 
 .header {
-  display: flex;
+  display: inline;
+  /* display: flex; */
 }
 
 .header__title {
+  display: inline;
   font-size: 20px;
   font-weight: 400;
 }
@@ -44,33 +53,30 @@ body {
 
 
 .header__button--more {
+  position: absolute;
+  right: 0;
   font-size: 10px;
 }
 
 .class__carousel {
   position: relative;
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
-  width: 1000px;
+  align-items: center; */
   height: 300px;
 }
 
 .carousel__section--main {
   position: relative;
-  display: flex;
   width: 50%;
   height: 100%;
   padding: 10px;
 }
 
 .main-carousel__div--img-wrap {
-  /* min-height: 150px; */
-  /* max-height: 200px; */
   height: 100%;
   background-color: lightgray;
   overflow: hidden;
-  object-fit: cover;
 
 }
 
@@ -100,12 +106,16 @@ body {
 }
 
 .carousel-wrap__section--sub {
+  position: absolute;
+  top: 0;
+  left: 500px;
+
   width: 50%;
   height: 100%;
 }
 
 .carousel__section--sub {
-  display: flex;
+  position: relative;
   height: 50%;
 }
 
@@ -116,19 +126,18 @@ body {
 }
 
 .sub-carousel__div--image-wrap {
-  display: flex;
-  align-items: center;
+  position: relative;
   height: 125px;
   width: 30%;
   overflow: hidden;
-  background-color: yellow;
 }
 
 .sub-carousel__img {
-  width: 100%;
-  height: 100%;
-  background-position: 50% 50%;
-  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 160px;
+  height: 125px;
 }
 
 .sub-carousel__img:hover {
@@ -137,6 +146,9 @@ body {
 }
 
 .sub-carousel__div {
+  position: absolute;
+  left: 165px;
+  display: inline;
   padding-left: 10px;
   font-size: 12px;
 }
@@ -148,9 +160,9 @@ body {
 
 .carousel-btns__div {
   position: absolute;
+  top: 125px;
+  left: -100px;
   width: 120%;
-  display: flex;
-  justify-content: space-between;
 }
 
 .sub-carousel__button--tag {
@@ -163,13 +175,15 @@ body {
 
 .btn--prev,
 .btn--next {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 5px;
   border-radius: 30px;
   box-shadow: 0px 0px 15px -6px #b4b4b4;
   cursor: pointer;
+}
+
+.btn--next {
+  position: absolute;
+  right: 0;
 }
 
 .btn__img {

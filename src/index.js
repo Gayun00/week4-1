@@ -62,7 +62,7 @@ function createMainClass(data) {
   </div>
   `
 }
-              // <img src=${data.img} alt="" class="sub-carousel__img">
+            // <div class="sub-carousel__img" style="background-image: url(${data.img})"></div>
 
 function createSubClass(arr) {
   const tagsColor = {
@@ -77,7 +77,7 @@ function createSubClass(arr) {
     return `
     <section class="carousel__section--sub">
             <span class="sub-carousel__div--image-wrap">
-              <div class="sub-carousel__img" style="background-image: url(${data.img})"></div>
+              <img src=${data.img} alt="" class="sub-carousel__img">
             </span>
             <div class="sub-carousel__div">
               <p class="sub-carousel__text--title">${data.name}</p>
