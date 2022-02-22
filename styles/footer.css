@@ -1,0 +1,223 @@
+
+
+/* footer */
+
+.blind {
+	position: absolute;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	margin: -1px;
+	width: 1px;
+	height: 1px;
+}
+
+.footer_wrap {
+	max-width: 1240px;
+	margin: 0 auto;
+	padding: 0 60px;
+}
+
+.footer_inner {
+	position: relative;
+	padding: 80px 0;
+}
+
+.sect_sns {
+	position: relative;
+	margin-left: 0;
+	display: block;
+}
+
+.sect_sns::after {
+	content: '';
+  display: block;
+  clear: both;
+}
+
+.sns {
+	padding: 0;
+	margin: 0;
+	border: none;
+	background: 0 0;
+	outline: 0;
+	cursor: pointer;
+	float: left;
+	display: block;
+}
+
+.sect_sns .sns.f::after {
+	background-image: url("https://kukka-2-media-123.s3.amazonaws.com/static/kukkart_new/img/sprite/kukka.png");
+	background-position: -42px -775px;
+	width: 32px;
+	height: 32px;
+	background-size: 1252px 845px;
+	display: block;
+	content: '';
+}
+
+.sect_sns .sns.i::after {
+	background-image: url("https://kukka-2-media-123.s3.amazonaws.com/static/kukkart_new/img/sprite/kukka.png");
+	background-position: -1214px -438px;
+	width: 32px;
+	height: 32px;
+	background-size: 1252px 845px;
+	display: block;
+	content: '';
+	margin-left: 20px;
+}
+
+.sect_sns .sns.y::after {
+	background-image: url("https://kukka-2-media-123.s3.amazonaws.com/static/kukkart_new/img/sprite/kukka.png");
+	background-position: -1164px -685px;
+	width: 32px;
+	height: 32px;
+	background-size: 1252px 845px;
+	display: block;
+	content: '';
+	margin-left: 20px;
+}
+
+
+/* contact */
+.contact {
+	margin-top: 14px;
+	float: left;
+}
+
+.contact dt {
+	float: left;
+	display: block;
+	font-size: 22px;
+	line-height: 33px;
+	font-weight: 500;
+	letter-spacing: -.33px;
+	color: #f7f7f7;
+}
+
+.contact dd.f{
+	margin-left: 20px;
+	float: left;
+	display: block;
+	font-size: 22px;
+	line-height: 33px;
+	font-weight: 300;
+	letter-spacing: -.33px;
+}
+
+.contact dd.s {
+	float: left;
+	display: block;
+	margin-top: 0;
+	font-size: 14px;
+	line-height: 33px;
+	font-weight: 300;
+	letter-spacing: -.21px;
+	margin-left: 10px;
+	color: #9b9b9b;
+}
+
+.contact dd.add_partner_tel {
+	float: none;
+	clear: both;
+	padding: 5px 0 0;
+	font-size: 14px;
+	line-height: 20px;
+	color: #fff;
+	font-weight: 100;
+	display: block;
+	margin-top: 0;
+	letter-spacing: -.21px;
+	margin-left:0;
+}
+
+.faq {
+	margin-top: 12px;
+	margin-left: 17px;
+	float: left;
+}
+
+.faq .link {
+	padding: 0 20px;
+	border: #9b9b9b 1px solid;
+	-webkit-border-radius: 18px;
+	-moz-border-radius: 18px;
+	border-radius: 18px;
+	cursor: pointer;
+	font-size: 13px;
+	line-height: 36px;
+	font-weight: 300;
+	letter-spacing: -.2px;
+	display: block;
+	height: 36px;
+}
+
+.about {
+	clear: both;
+	position: relative;
+	padding: 40px 0 0;
+	border-top: none;
+}
+
+.about::before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 20px;
+	left: 0;
+	right: 0;
+	height: 1px;
+	background: #444;
+}
+
+.logo {
+	position: absolute;
+	top: -60px;
+	right: 0;
+	background-image: url(https://kukka-2-media-123.s3.amazonaws.com/static/kukkart_new/img/sprite/kukka.png);
+	background-position: 0 -612px;
+	width: 150px;
+	height: 63px;
+	background-size: 1252px 845px;
+}
+
+.about dd {
+	margin-right: 18px;
+	font-size: 14px;
+	line-height: 25px;
+	font-weight: 300;
+	letter-spacing: -.21px;
+	position: relative;
+	display: inline-block;
+	color: #d3d3d3;
+}
+
+.about dd:not(.end)::after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 6px;
+	right: -10px;
+	width: 1px;
+	height: 13px;
+	background: #d3d3d3;
+}
+
+.items {
+	margin-top: 0;
+	position: absolute;
+	bottom: 80px;
+	right: 0;
+}
+
+.items .link {
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 200;
+	letter-spacing: -.21px;
+	float: left;
+	display: block;
+}
+
+.items .link:not(.first) {
+	margin-left: 25px;
+}
