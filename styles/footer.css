@@ -11,6 +11,15 @@
 	height: 1px;
 }
 
+footer {
+  background: #222;
+}
+
+footer nav {
+  background-color: #222;
+  color: white;
+}
+
 .footer_wrap {
 	max-width: 1240px;
 	margin: 0 auto;
@@ -102,6 +111,7 @@
 	line-height: 33px;
 	font-weight: 300;
 	letter-spacing: -.33px;
+	color:#f7f7f7;
 }
 
 .contact dd.s {
@@ -169,10 +179,10 @@
 	background: #444;
 }
 
-.logo {
+footer .logo {
 	position: absolute;
-	top: -60px;
-	right: 0;
+	top: -77px;
+  left: 968px;
 	background-image: url(https://kukka-2-media-123.s3.amazonaws.com/static/kukkart_new/img/sprite/kukka.png);
 	background-position: 0 -612px;
 	width: 150px;
