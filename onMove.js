@@ -11,3 +11,6 @@ tagA.forEach((tag) => {
     }
   });
 });
+
+window.open('popuppage.html', 'popup', 'width=500, height=600, left=0, top=0');
+
