@@ -9,11 +9,11 @@ prevBtn.addEventListener("click", changeOrderPrev);
 let classesArr = [];
 let orderNoArr = [0, 1, 2];
 
-async function fetchClass() {
-  const res = await fetch('./data/data.json');
-  const classesData = await res.json();
-  classesArr = classesData;
-  createClassesEl();
+function fetchClass() {
+  const res = fetch('./data/data.json')
+    .then(res => res.json())
+    .then(res => classesArr = res)
+    .then(res => createClassesEl())
 }
 
 fetchClass()
